@@ -1,0 +1,38 @@
+code snippets:
+
+The 3 code snippets we need to make the simplest possible REACT Application:
+
+index.html:   needs to provide a HTML Selector to target our JSX component output to
+	<div id="root"></div>
+  note: line 6 code hooks up to line 30 code
+  
+app.js:       the content generator: This function creates some content
+app.js
+import "./styles.css";
+export default function App() {
+return (
+<div className="App">
+<h1>Hello CodeSandbox</h1>
+<h2>Start editing to see some magic happen!</h2>
+</div>
+);
+}
+
+This function creates some content
+
+
+
+index.js:     This code file is the WRAPPER for our JSX Component: It provides a render method specifying a What and a Where.
+              app.js gets wired into index.js by this line: import App from "./App".
+              The JSX component is wired into the index.html page via the HTML Selector
+import { StrictMode } from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+const rootElement = document.getElementById("root");
+ReactDOM.render(
+<App />  ,    what
+rootElement     where
+);
+
+This code provides our JSX Component
+
