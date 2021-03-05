@@ -8,3 +8,5 @@ Notes:
 You should become proficient in describing the HMTL DOM, and in using the Chromium Dev Tools and the Console to examine and experiment with the NODES of the DOM.
 
 #TODO link relevant lab worksheets and workbooks
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#expressions
